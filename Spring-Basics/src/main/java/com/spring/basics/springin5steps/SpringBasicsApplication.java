@@ -1,4 +1,4 @@
-package com.spring.basics;
+package com.spring.basics.springin5steps;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
