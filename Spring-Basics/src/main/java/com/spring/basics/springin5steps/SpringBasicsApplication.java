@@ -9,6 +9,17 @@ import org.springframework.context.annotation.Scope;
 @SpringBootApplication
 
 public class SpringBasicsApplication {
+	
+	//What are beans?
+	//using @Component annotation we tell spring about the beans to manage
+	
+	//What are the dependencies of bean?
+	//@Autowired annotation tells about dependency
+	
+	//Where to search for beans?
+	//@ComponentScan is used to scan package (where main class is presnt) for beans annotated with @Component annotation
+	//@SpringBootApplication annotation does componentscan by default
+	
 
 	public static void main(String[] args) {
 	
