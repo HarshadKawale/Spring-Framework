@@ -23,8 +23,11 @@ public class BinarySearchImpl {
 	//@Component-@Autowired-@Qualifier are two possible combinations shcan be used
 	
 	//object will be injected into the property sortAlgorithm at run time using @Autowired annotation
+	//sortAlgorithm is a dependency of binarysearchImpl
 	//@Qualifier("quick")
 	private sortAlgorithm sortAlgorithm;
+	
+	
 	
 	
 	//1.Constructor injection using constructor to set dependency above using @Autowired annotation 
