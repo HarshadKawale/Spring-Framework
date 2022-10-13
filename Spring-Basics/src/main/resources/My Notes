@@ -10,12 +10,13 @@ Spring CLoud
 Spring Session
 Spring web services
 Others
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 Why spring is so popular
 1.enables testable code
 2.less code and no plumbing(extra code) code
 3.flexibility to accept new technology
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 //sortAlgorithm is a dependency of binarysearchImpl
 
@@ -31,3 +32,10 @@ so data layer is dependency of business layer
 and business layer is a dependency of web layer
 
 web layer will invoke service from business while business will invoke service from data layer
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+@Primary indicates that a bean should be given preference when multiple candidates are qualified to autowire a single-valued dependency. There should be only one @Primary bean among same type of beans
+if multiple beans declared primary of same type then it will throw an error as multiple beans are declared as primary
+
+@Qualifier annotation is used to resolve the autowiring conflict, when there are multiple beans of same type
