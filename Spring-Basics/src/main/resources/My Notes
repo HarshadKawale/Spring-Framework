@@ -39,3 +39,20 @@ web layer will invoke service from business while business will invoke service f
 if multiple beans declared primary of same type then it will throw an error as multiple beans are declared as primary
 
 @Qualifier annotation is used to resolve the autowiring conflict, when there are multiple beans of same type
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Scope of bean
+
+default scope-Singletone
+
+Singletone-one instance per spring context
+prototype-new bean whenever requested
+request-one bean per HTTP request
+session-one bean per HTTP session
+
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) to change scope to prototype or @Scope(ConfigurableBeanFactory.SCOPE_Singletone)by default
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+request
+session
