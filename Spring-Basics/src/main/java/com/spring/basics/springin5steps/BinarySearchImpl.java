@@ -14,21 +14,38 @@ import org.springframework.stereotype.Component;
 public class BinarySearchImpl {
 
 	@Autowired
-	@Qualifier("bubble")
+	
+	//
+	//If no constructor or setter injection used/written, it is fine and only @Autowired  uses the setter injection and injection happens by type between eligible beans
+	
+	//@Component-@Autowired-@Primary
+	//or
+	//@Component-@Autowired-@Qualifier are two possible combinations shcan be used
+	
+	//object will be injected into the property sortAlgorithm at run time using @Autowired annotation
+	//@Qualifier("quick")
 	private sortAlgorithm sortAlgorithm;
 	
-//	public BinarySearchImpl(com.spring.basics.sortAlgorithm sortAlgorithm) {
+	
+	//1.Constructor injection using constructor to set dependency above using @Autowired annotation 
+	//autowiring by name
+	
+	//Autowiring by type from bean name 'binarySearchImpl' via constructor to bean named 'bubbleSortAlgorithm'(Because bubbleSortAlgorithm is marked with @Primary)
+//	public BinarySearchImpl(sortAlgorithm sortAlgorithm) {
 //		super();
 //		this.sortAlgorithm = sortAlgorithm;
 //	}
 
+	
 	public sortAlgorithm getSortAlgorithm() {
 		return sortAlgorithm;
 	}
 
-	public void setSortAlgorithm(sortAlgorithm sortAlgorithm) {
-		this.sortAlgorithm = sortAlgorithm;
-	}
+	//1.Setter injection using setter method to set dependency above using @Autowired annotation
+	////autowiring by type
+//	public void setSortAlgorithm(sortAlgorithm sortAlgorithm) {
+//		this.sortAlgorithm = sortAlgorithm;
+//	}
 
 	public int binarySearch(int [] numbers ,int numToSearchFor) {
 		

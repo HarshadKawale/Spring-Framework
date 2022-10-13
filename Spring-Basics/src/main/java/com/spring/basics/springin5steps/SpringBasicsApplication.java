@@ -18,7 +18,7 @@ public class SpringBasicsApplication {
 	
 	//Where to search for beans?
 	//@ComponentScan is used to scan package (where main class is presnt) for beans annotated with @Component annotation
-	//@SpringBootApplication annotation does componentscan by default
+	//@SpringBootApplication annotation scans beans in current and base package
 	
 
 	public static void main(String[] args) {
