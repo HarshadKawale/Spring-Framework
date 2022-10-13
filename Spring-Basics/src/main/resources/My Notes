@@ -15,3 +15,19 @@ Why spring is so popular
 1.enables testable code
 2.less code and no plumbing(extra code) code
 3.flexibility to accept new technology
+
+
+//sortAlgorithm is a dependency of binarysearchImpl
+
+Applications are divided into below parts
+
+Web layer-deals with business logic and show it on UI
+|
+business layer-contains business logic
+|
+data layer-deals with getting data from DB
+
+so data layer is dependency of business layer 
+and business layer is a dependency of web layer
+
+web layer will invoke service from business while business will invoke service from data layer
