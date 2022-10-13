@@ -1,20 +1,20 @@
-package com.spring.basics.springin5steps;
+package com.spring.springin5steps.basic;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-//@Primary
+@Primary
 //we use @Primary to give higher preference to a bean when there are multiple beans of the same type
-@Qualifier("bubble")
-public class BubbleSortAlgorithm implements sortAlgorithm{
+@Qualifier("quick")
+public class QuickSortAlgorithm implements sortAlgorithm {
 
 	public int[] sort(int [] numbers) {
 		
 		
-		System.out.println("Sorting using BubbleSortAlgorithm...");
-
+		System.out.println("Sorting using QuickSort Algorithm...");
+		
 		return numbers;
 	}
 }

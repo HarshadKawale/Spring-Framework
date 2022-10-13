@@ -1,10 +1,12 @@
-package com.spring.basics.springin5steps;
+package com.spring.springin5steps;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Scope;
+
+import com.spring.springin5steps.basic.BinarySearchImpl;
 
 @SpringBootApplication
 

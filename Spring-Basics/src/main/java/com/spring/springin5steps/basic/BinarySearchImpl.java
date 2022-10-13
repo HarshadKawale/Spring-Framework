@@ -1,4 +1,4 @@
-package com.spring.basics.springin5steps;
+package com.spring.springin5steps.basic;
 
 import java.util.Arrays;
 
