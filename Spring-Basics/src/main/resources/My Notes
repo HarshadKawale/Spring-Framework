@@ -7,4 +7,11 @@ Spring Batch
 Spring HATEOAS
 Spring Integration
 Spring CLoud
+Spring Session
+Spring web services
 Others
+
+Why spring is so popular
+1.enables testable code
+2.less code and no plumbing(extra code) code
+3.flexibility to accept new technology
