@@ -52,6 +52,9 @@ session-one bean per HTTP session
 
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) to change scope to prototype or @Scope(ConfigurableBeanFactory.SCOPE_Singletone)by default
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+@ComponentScan("com.spring.componentscan") on Application class when dependency in in other Package
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 request
