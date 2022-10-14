@@ -63,4 +63,12 @@ Lifecycle of a Bean - @PostConstruct and @PreDestroy
 @Predestroy --
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
+Container and Dependency Injection (CDI) - @Named, @Inject,@SingleTon
+CDI is like Interface and @Named, @Inject,@SingleTon are its Implementation
+e.g JPA(Java persistence API) is an interface and hibernate is its implementation
+
+ @Named(Interface)--(@Autowired)(Implementation), below in same way
+ @Inject--(@Component and @Qualifier),
+ @SingleTon--(Defines a scope of singleton)
+
 
