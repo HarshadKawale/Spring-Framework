@@ -13,9 +13,9 @@ import com.spring.springin5steps.scope.PersonDAO;
 
 @SpringBootApplication
 
-public class SpringBasicsScopeApplication {
+public class SpringScopeApplication {
 	
-	private static Logger LOGGER = LoggerFactory.getLogger(SpringBasicsScopeApplication.class);
+	private static Logger LOGGER = LoggerFactory.getLogger(SpringScopeApplication.class);
 
 	public static void main(String[] args) {
 	
@@ -23,7 +23,7 @@ public class SpringBasicsScopeApplication {
 		System.out.println("SpringBoot SpringBasicsScopeApplication Project Started ....");
 		
 
-		ApplicationContext applicationContext = SpringApplication.run(SpringBasicsScopeApplication.class, args);
+		ApplicationContext applicationContext = SpringApplication.run(SpringScopeApplication.class, args);
 		PersonDAO personDao =applicationContext.getBean(PersonDAO.class);
 		PersonDAO personDao1 =applicationContext.getBean(PersonDAO.class);
 		

@@ -16,9 +16,9 @@ import com.spring.springin5steps.scope.PersonDAO;
 
 @SpringBootApplication
 @ComponentScan("com.spring.componentscan")
-public class SpringBasicsComponentScanApplication {
+public class SpringComponentScanApplication {
 	
-	private static Logger LOGGER = LoggerFactory.getLogger(SpringBasicsComponentScanApplication.class);
+	private static Logger LOGGER = LoggerFactory.getLogger(SpringComponentScanApplication.class);
 
 	public static void main(String[] args) {
 	
@@ -26,7 +26,7 @@ public class SpringBasicsComponentScanApplication {
 		System.out.println("SpringBoot SpringBasicsScopeApplication Project Started ....");
 		
 
-		ApplicationContext applicationContext = SpringApplication.run(SpringBasicsComponentScanApplication.class, args);
+		ApplicationContext applicationContext = SpringApplication.run(SpringComponentScanApplication.class, args);
 		
 		ComponentDAO componentDao =applicationContext.getBean(ComponentDAO.class);
 		ComponentDAO componentDao1 =applicationContext.getBean(ComponentDAO.class);
