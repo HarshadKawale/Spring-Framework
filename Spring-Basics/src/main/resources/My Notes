@@ -54,7 +54,7 @@ session-one bean per HTTP session
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 @ComponentScan("com.spring.componentscan") on Application class when dependency in in other Package
 
-ComponentScan is nothing but search for bean managed by spring in given package
+ComponentScan is nothing but search for bean managed by spring IOC Container in given package
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
