@@ -56,7 +56,11 @@ session-one bean per HTTP session
 
 ComponentScan is nothing but search for bean managed by spring IOC Container in given package
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+Lifecycle of a Bean - @PostConstruct and @PreDestroy
+
+@PostConstruct -- As soon as bean is created @PostConstruct method will be called
+
+@Predestroy --
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-request
-session

@@ -2,6 +2,11 @@ package com.spring.springin5steps.basic;
 
 import java.util.Arrays;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -13,6 +18,11 @@ import org.springframework.stereotype.Component;
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class BinarySearchImpl {
 
+	public BinarySearchImpl() {
+		
+		System.out.println(" Object of BinarySearchImpl is coonstructing");
+	}
+	private static Logger LOGGER = LoggerFactory.getLogger(BinarySearchImpl.class);
 	@Autowired
 	
 	//
@@ -83,6 +93,16 @@ public class BinarySearchImpl {
 		return 3;
 	}
 
-
+	@PostConstruct
+	public void postConstruct() {
+		
+		LOGGER.info("It is from PostCOnstruct Method of BinarySearchImpl used to do terminal operation on beans before getting destroy...");
+	}
 	
+	@PreDestroy
+	public void predestroy() {
+		
+		LOGGER.info("It is from PreDestroy Method of BinarySearchImpl used to release resources that it has been holding...");
+		
+	}
 }
