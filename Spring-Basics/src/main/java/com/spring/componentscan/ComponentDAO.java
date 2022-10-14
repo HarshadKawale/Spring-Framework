@@ -12,14 +12,14 @@ import com.spring.springin5steps.scope.JdbcConnection;
 public class ComponentDAO {
 
 	@Autowired
-	JdbcConnection jdbcconnection;
+	ComponentJdbcConnection componentjdbcconnection;
 
-	public JdbcConnection getJdbcconnection() {
-		return jdbcconnection;
+	public ComponentJdbcConnection getJdbcconnection() {
+		return componentjdbcconnection;
 	}
 
-	public void setJdbcconnection(JdbcConnection jdbcconnection) {
-		this.jdbcconnection = jdbcconnection;
+	public void setJdbcconnection(ComponentJdbcConnection jdbcconnection) {
+		this.componentjdbcconnection = jdbcconnection;
 	}
 		
 }
